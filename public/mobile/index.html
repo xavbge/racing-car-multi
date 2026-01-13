@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Manette - Mobile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controller-container">
+    <div class="status-bar">
+      <div class="status" id="status">
+        <span class="dot"></span>
+        <span id="statusText">Connexion...</span>
+      </div>
+    </div>
+
+    <div class="controller-layout">
+      <div class="dpad-container">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up" id="btnUp">
+            <span>▲</span>
+          </button>
+          <button class="dpad-btn dpad-left" id="btnLeft">
+            <span>◀</span>
+          </button>
+          <div class="dpad-center"></div>
+          <button class="dpad-btn dpad-right" id="btnRight">
+            <span>▶</span>
+          </button>
+          <button class="dpad-btn dpad-down" id="btnDown">
+            <span>▼</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="center-info">
+        <div class="game-title">TURBO RACER</div>
+        <div id="feedback" class="feedback">Prêt !</div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="action-btn btn-b" id="btnB">
+          <span class="btn-label">B</span>
+        </button>
+        <button class="action-btn btn-a" id="btnAccelerate">
+          <span class="btn-label">A</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
